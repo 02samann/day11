@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form enctype="multipart/form-data" class="form" method="post">
+        <input
+          class="inputs"
+          required
+          autocomplete="off"
+          minlength="3"
+          maxlength="30"
+          aria-label="Name"
+          placeholder="Name"
+          id="first_name"
+          name="user_name"
+          type="text"
+        />
+
+        <input class="inputs" aria-label="Email" placeholder="Email" name="user_email" type="email" />
+
+        <input
+          class="inputs"
+          min="18"
+          max="40"
+          aria-label="age"
+          placeholder="age"
+          name="user_ago"
+          type="number"
+        />
+
+        <input class="inputs" name="user_password" placeholder="password" 
+        aria-label="password"  type="password" />
+        <input name="photo" type="file">
+       
+    <fieldset>
+        <legend>Qiziqishlar</legend>
+        <div>
+            <input id="game" name="game"  type="checkbox">
+            <label for="game">Counter strike 1.6</label>
+        </div>
+        <div>
+            <input checked id="game" name="game"  type="checkbox">
+            <label for="game">Kitob o'qish</label>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>lang</legend>
+        <div>
+            <input id="uzb" type="text" name="lang">
+            <label for="uzb">UZB</label>
+        </div>
+        <div>
+            <input id="rus" type="text" name="lang">
+            <label for="rus">RUS</label>
+        </div>
+        <div>
+            <input id="eng" type="text" name="lang">
+            <label for="eng">ENG</label>
+        </div>
+    </fieldset>
+    <select class="inputs" name="location" id="user_location">
+        <option value="Andijon">Andijon</option>
+        <option value="samarqand">Samarqand</option>
+        <option selected value="toshkent">toshkent</option>
+    </select>
+
+    <textarea class="textarea" name="dec" id="dec">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore quisquam omnis voluptates eum. Vitae, nisi culpa ratione quam unde delectus!
+    </textarea>
+    <input class="inputs" name="date" type="date">
+    <input type="color" name="color" type="color">
+    <button type="submit">Send</button>
+    </form>
+    </div>
+  </body>
+</html>

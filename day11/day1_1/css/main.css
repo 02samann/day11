@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form {
+    margin-top: 100px;
+    padding: 40px;
+    box-shadow: 0px 0px 10px 3px #00000067;
+    border-radius: 20px;
+}
+
+.inputs {
+    display: block;
+    margin-bottom: 20px;
+}
+.textarea {
+    width: 500px;
+    height: 200px;
+    resize: none;
+}
